@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Simon</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+</head>
+
+<body>
+  <h1 id="level-title">Press the 'start' button to Start</h1>
+  <div class="container">
+    <div lass="row">
+
+      <div type="button" id="green" class="btn green">
+
+      </div>
+
+      <div type="button" id="red" class="btn red">
+
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div type="button" id="yellow" class="btn yellow">
+
+      </div>
+      <div type="button" id="blue" class="btn blue">
+
+      </div>
+
+    </div>
+    <button onclick="startByButton()" type="button" class="start-btn btn-secondary">Start</button>
+    <a class="terms-button" onclick="openTermsModal()" style="font-size: 2rem;">How To Play</a>
+  </div>
+  <div id="termsModal-1" style="visibility:hidden;">
+    <div id="termsContent" style="font-family: cursive; background-color: #fef2bf;">
+      <!-- Your terms and conditions content goes here -->
+      <h1 class="d-flex" style="justify-content: center; text-align: center; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Result</h1>
+      <h2 id="Result">Your Score : none</h2>
+      <h2>Come Again Later With Your Better Performance😅😅😅</h2>
+      <button onclick="closeTermsModal()" type="button" class="close-btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    </div>
+  </div>
+
+  <!-- Modal for Terms and Conditions -->
+  <div id="termsModal">
+    <div id="termsContent" style="font-family: cursive; background-color: #fef2bf;">
+      <!-- Your terms and conditions content goes here -->
+      <h2>Here are some rules for the Simon game:</h2>
+      <ul>
+        <li>At the start of the game, a key lights up randomly and makes a sound.</li>
+        <li>The player must press the same key.</li>
+        <li>Simon then turns on the same light again and a second light, also randomly.</li>
+        <li>Any player who makes a mistake or takes longer than five seconds to repeat a signal is eliminated from the game.</li>
+        <li>The goal is to repeat the longest sequence of signals correctly.</li>
+      </ul>
+      <h2>Simon is an electronic game that tests short-term memory skills.</h2>
+      <button onclick="closeTermsModal()" type="button" class="close-btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="Game.js"></script>
+  
+</body>
+
+</html>
