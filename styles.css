@@ -1,0 +1,166 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  text-align: center;
+  background-color: #011F3F;
+}
+
+#level-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  margin: 5%;
+  color: #FEF2BF;
+}
+
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+}
+
+.btn {
+  margin: 3rem;
+  display: inline-block;
+  height: 20rem;
+  width: 20rem;
+  border: 1.5rem solid black;
+  border-radius: 20%;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.pressed {
+  box-shadow: 0 0 2.5rem white;
+  background-color: grey;
+}
+
+#termsModal {
+  font-size: 2rem;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+#termsModal-1 {
+  font-size: 2rem;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+#termsContent {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 80%;
+  text-align: left;
+}
+
+/* Style for the button */
+.terms-button {
+  position: absolute;
+  bottom: 2.5rem;
+  top: auto;
+  right: 4rem;
+  left: auto;
+  /* display: inline-block; */
+  padding: 2rem 2.5rem;
+  background-color: #fef2bf;
+  color: #011f3f;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.close-btn {
+  font-family: 'Press Start 2P', cursive;
+  display: inline-block;
+  font-size: 2rem;
+  width: 12rem;
+  height: 6rem;
+  padding: 1.5rem 1rem;
+  background: linear-gradient(to right, rgb(66, 66, 66), #919191, #c5c5c5);
+  color: #ffffff;
+  text-decoration: none;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.start-btn {
+  font-size: 2.5rem;
+  visibility: visible;
+  font-family: 'Press Start 2P', cursive;
+  display: inline-block;
+  margin-top: 6rem;
+  width: 18rem;
+  height: 8.5rem;
+  padding: 1rem 2rem;
+  background: linear-gradient(to right, aqua, #5fffc4, #7bfea7);
+  color: #ffffff;
+  text-decoration: none;
+  border: none;
+  border-radius: 4rem;
+  cursor: pointer;
+}
+
+@media (max-width: 1800px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 1200px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 950px) {
+  html {
+    font-size: 37%;
+  }
+}
+
+@media (max-width: 800px) {
+  html {
+    font-size: 34%;
+  }
+}
+
+@media (max-width: 750px) {
+  html {
+    font-size: 25%;
+  }
+}
